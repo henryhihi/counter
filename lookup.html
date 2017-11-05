@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="js/fdb-all.min.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <h1>支出查詢</h1>
+    <input type="radio" name="gender" value="curMonth">本月份<br>
+    <input type="radio" name="gender" value="time">指定時間<br>
+    <input type="date" id="fromtime"> - <input type="date" id="totime"><br>
+    <button class="btn btn-primary" onclick="Search()">查詢</button>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>吃的</th>
+                <th>喝的</th>
+                <th>玩的</th>
+            </tr>
+        </thead>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>日期</th>
+                <th>時間</th>
+                <th>項目</th>
+                <th>金錢</th>
+            </tr>
+        </thead>
+        <tbody id="accountingTable">
+
+        </tbody>
+
+    </table>
+    <script type="text/javascript" src="js/lookup.js"></script>
+</body>
+
+</html>
