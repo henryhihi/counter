@@ -21,27 +21,32 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>吃的</th>
-                <th>喝的</th>
-                <th>玩的</th>
+                <th>類別</th>
+                <th>金額</th>
+                <th>百分比</th>
             </tr>
         </thead>
+          <tbody>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>吃的</td>
+            <td id="eatcost">0</td>
+            <td id="eatper">?</td>
         </tr>
-        </tfoot>
-        <tbody>
+      
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>玩的</td>
+                <td id="playcost">0</td>
+                <td id="playper">?</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>其他</td>
+                <td id="othercost">0</td>
+                <td id="otherper">?</td>
+            </tr>
+            <tr>
+                <td>總和</td>
+                <td id="totalcost">0</td>
+                <td>100%</td>
             </tr>
             
         </tbody>
@@ -50,9 +55,10 @@
         <thead>
             <tr>
                 <th>日期</th>
-                <th>時間</th>
+                <th>類別</th>
                 <th>項目</th>
-                <th>金錢</th>
+                <th>金額</th>
+                <th>功能</th>
             </tr>
         </thead>
         <tbody id="accountingTable">
